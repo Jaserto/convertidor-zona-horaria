@@ -1,0 +1,80 @@
+body {
+    font-family: "Work Sans", sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #cbbde5;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    font-size: 24pt;
+    flex-basis: 100%;
+    font-weight: normal;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.header {
+    display: flex;
+}
+
+.title {
+    width: 1070px;
+}
+
+
+div.wrapper {
+    padding: 35px 50px 50px 50px;
+    width: 1260px;
+    margin: 150px 0 0px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p.sub{
+    margin-top: 0;
+    font-size: 12pt;
+}
+
+.icon {
+    transition: all 0.2s ease-in-out;
+}
+
+div.search {
+    position: relative;
+    width: 100%;
+    padding: 10px 0 20px 0;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+div.search input[type="text"] {
+    width: 400px;
+    height: 32px;
+    padding: 8px 10px 8px 35px;
+    border: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+div.search input[type="text"]:focus {
+    outline: none;
+}
