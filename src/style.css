@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+
 body {
     font-family: "Work Sans", sans-serif;
     -webkit-touch-callout: none;
@@ -8,7 +10,6 @@ body {
     user-select: none;
     background-color: #cbbde5;
 }
-
 
 * {
     box-sizing: border-box;
@@ -22,7 +23,6 @@ h4 {
     margin: 0;
     padding: 0;
 }
-
 
 h1 {
     font-size: 24pt;
@@ -40,6 +40,10 @@ h1 {
     width: 1070px;
 }
 
+p.sub {
+    margin-top: 0;
+    font-size: 12pt;
+}
 
 div.wrapper {
     padding: 35px 50px 50px 50px;
@@ -49,13 +53,47 @@ div.wrapper {
     flex-wrap: wrap;
 }
 
-p.sub{
-    margin-top: 0;
-    font-size: 12pt;
+div.timezoneList {
+    width: 320px;
+    border-radius: 10px 0 0 10px;
 }
 
-.icon {
-    transition: all 0.2s ease-in-out;
+div.home {
+    height: 35px;
+    margin-top: 3px;
+    width: 20px;
+    font-size: 8pt;
+    margin-right: 12px;
+    text-align: center;
+    vertical-align: center;
+}
+
+div.modify {
+    width: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+}
+
+div.home img {
+    margin-top: 3px;
+    width: 14px;
+}
+
+.makeHome {
+    margin-top: 7px;
+}
+
+div.modify img {
+    width: 15px;
+    display: block;
+}
+
+div.modify img:first-of-type {
+    width: 15px;
+    display: block;
+    margin-top: 3px;
 }
 
 div.search {
@@ -77,4 +115,156 @@ div.search input[type="text"] {
 
 div.search input[type="text"]:focus {
     outline: none;
+}
+
+input[type="submit"] {
+    display: none;
+    outline: none;
+    border: none;
+    height: 32px;
+    padding: 0px 20px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 10pt;
+}
+
+div.timezoneComp {
+    padding-left: 20px;
+    font-size: 8.5pt;
+    width: 100%;
+    display: flex;
+    margin-bottom: 18px;
+    /* align-items: center; */
+}
+
+div.hoursList {
+    width: 840px;
+    border-radius: 0 10px 10px 0;
+}
+
+div.hoursComp {
+    width: 100%;
+    display: flex;
+    height: 45px;
+    padding: 0;
+    margin-bottom: 37px;
+}
+
+div.hoursComp div.day {
+    display: flex;
+}
+
+div.timezone {
+    width: 270px;
+}
+
+div.timezone div.timezone1 {
+    font-size: 12.5pt;
+    margin-bottom: 3px;
+}
+
+div.timezone div.timezone1 .cityName {
+    font-weight: 600;
+}
+
+div.timezone div.timezone2 {
+    font-size: 9pt;
+}
+
+div.timezone div.timezone1,
+div.timezone div.timezone2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+span.abbrZone {
+    border-radius: 40%;
+}
+
+div.day span {
+    width: 33px;
+    padding: 10px 0;
+    font-size: 10pt;
+    text-align: center;
+    height: 35px;
+}
+
+div.day .date {
+    padding: 5px 0;
+    font-size: 8pt;
+    text-align: center;
+    height: 35px;
+    letter-spacing: 0;
+}
+
+p.todayP {
+    padding: 0;
+    margin: 0;
+}
+
+span.focus {
+    color: inherit;
+}
+
+ul.suggestionList {
+    width: 400px;
+    margin-top: 33px;
+    padding: 0;
+    z-index: 10;
+    list-style-type: none;
+    /* letter-spacing: 1px; */
+    font-size: 9pt;
+    position: absolute;
+    z-index: 10;
+}
+
+ul.suggestionList li {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px;
+    cursor: hand;
+}
+
+ul.suggestionList .listCountry {
+    text-align: right;
+    width: 45%;
+}
+
+.makeHome:hover,
+.remove:hover {
+    cursor: pointer;
+}
+
+.remove {
+    /* margin-top: px; */
+    position: absolute;
+    margin-left: 1645px;
+}
+
+div.hoursList,
+div.timezoneList {
+    height: 90px;
+    padding-top: 25px;
+}
+
+footer {
+    font-size: 9.5pt;
+    margin: 0 auto;
+    width: 1220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon {
+    transition: all 0.2s ease-in-out;
+}
+
+a.git_link {
+    width: 110px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
