@@ -1,4 +1,4 @@
-# ⌚¿Quieres saber la hora en alguna parte del mundo? ⌚
+# ¿Quieres saber la hora en alguna parte del mundo? ⌚
 
 En esta web serás capaz de averiguar qué hora es en
 ese sitio en el que estás pensando.
